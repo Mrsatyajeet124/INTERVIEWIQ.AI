@@ -14,6 +14,9 @@ app.use(cors({
     origin:"https://interviewiq-ai-4.onrender.com",
     credentials:true
 }))
+app.get("/",(req,res)=>{
+    res.send("Backend runing");
+})
 
 app.use(express.json())
 app.use(cookieParser())
